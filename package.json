@@ -10,7 +10,9 @@
     "changeset": "changeset",
     "barrels": "npx barrelsby --config barrels-config.json",
     "version-packages": "changeset version",
-    "prepare": "husky"
+    "prepare": "husky",
+    "storybook": "turbo run storybook --filter @upleat-ui/storybook storybook",
+    "build-storybook": "pnpm --filter @upleat-ui/storybook build"
   },
   "devDependencies": {
     "prettier": "^3.3.3",

@@ -1,0 +1,28 @@
+{
+  "name": "@upleat-ui/storybook",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "storybook": "storybook dev -p 5500",
+    "build": "storybook build"
+  },
+  "dependencies": {
+    "@upleat-ui/ui": "workspace:*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3",
+    "@storybook/addon-essentials": "^8.4.4",
+    "@storybook/addon-interactions": "^8.4.4",
+    "@storybook/addon-links": "^8.4.4",
+    "@storybook/blocks": "^8.4.4",
+    "@storybook/react": "^8.4.4",
+    "@storybook/react-vite": "^8.4.4",
+    "@storybook/test": "^8.4.4",
+    "@vitejs/plugin-react": "^4.2.1",
+    "storybook": "^8.4.4",
+    "vite": "^5.1.4"
+  }
+}
