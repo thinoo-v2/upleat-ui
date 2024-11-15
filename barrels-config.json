@@ -1,0 +1,11 @@
+{
+    "delete": true,
+    "directory": [
+        "./packages/ui/src"
+    ],
+    "exclude": [
+        ".stories.tsx"
+    ],
+    "location": "all",
+    "singleQuotes": true
+}

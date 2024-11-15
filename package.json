@@ -1,22 +1,41 @@
 {
-  "name": "snuilab",
+  "name": "upleat-ui",
   "private": true,
   "scripts": {
     "build": "turbo build",
-    "dev": "turbo dev",
+    "dev:web": "turbo dev:web",
     "lint": "turbo run lint",
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
-    "version-packages": "changeset version"
+    "barrels": "npx barrelsby --config barrels-config.json",
+    "version-packages": "changeset version",
+    "prepare": "husky"
   },
   "devDependencies": {
-    "prettier": "^3.2.5",
-    "turbo": "^2.2.3",
-    "typescript": "5.5.4"
+    "prettier": "^3.3.3",
+    "turbo": "^2.3.0",
+    "typescript": "5.5.4",
+    "@changesets/cli": "^2.27.9",
+    "@tanstack/eslint-plugin-query": "^5.51.15",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "husky": "^9.1.6"
   },
   "packageManager": "pnpm@8.15.6",
   "engines": {
     "node": ">=18"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.27.9"
   }
 }

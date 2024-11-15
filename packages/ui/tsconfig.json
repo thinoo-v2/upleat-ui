@@ -1,5 +1,5 @@
 {
-  "extends": "@snuilab/typescript-config/react-library.json",
+  "extends": "@upleat-ui/typescript-config/react-library.json",
   "compilerOptions": {
     "outDir": "dist"
   },
