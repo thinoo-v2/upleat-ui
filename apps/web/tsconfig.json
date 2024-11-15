@@ -1,6 +1,12 @@
 {
   "extends": "@upleat-ui/typescript-config/nextjs.json",
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@upleat-ui/ui": [
+        "../../packages/ui/src"
+      ]
+    },
     "plugins": [
       {
         "name": "next"

@@ -1,4 +1,4 @@
-import { Button } from "../../../packages/ui/src/Button/Button";
+import { Button } from "@upleat-ui/ui/button";
 import styles from "./page.module.css";
 
 export default function Home() {
