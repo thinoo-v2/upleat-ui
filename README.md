@@ -16,14 +16,14 @@ npm install -g pnpm
 참고 https://velog.io/@citron03/Mac-%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0-brew-nvm-node-git
 ```
 
-### 아래의 명령어로 생성하고 수정한 프로젝트임.
+### 아래의 명령어로 생성하고 수정한 프로젝트입니다.
 
 ```sh
 npx create-turbo@latest -e design-system
 ```
 
 ### 유용한 명령어들
-- `pnpm dev:web` - 스토리북 실행합니다.
+- `pnpm dev:web` - UI web을 실행합니다.
 - `pnpm storybook` - 스토리북 실행합니다.
 - `pnpm changeset` - Changeset을 생성합니다.
 - `pnpm lint` - eslint를 실행합니다.
