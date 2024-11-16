@@ -43,3 +43,8 @@ npx create-turbo@latest -e design-system
 ### WIKI
 
 https://github.com/thinoo-thepsyentist/upleat-ui/wiki
+
+
+### Task관리
+
+https://github.com/users/thinoo-thepsyentist/projects/5
