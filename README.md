@@ -40,4 +40,6 @@ npx create-turbo@latest -e design-system
 - 코드버전관리 : git
 
 
+### WIKI
 
+https://github.com/thinoo-thepsyentist/upleat-ui/wiki
