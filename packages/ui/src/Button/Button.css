@@ -1,0 +1,38 @@
+.button {
+  display: inline-flex; align-items: center; vertical-align: middle;
+}
+.--button-solid {
+  background-color: var(--mantine-color-primary-light);
+}
+.--button-outline {
+  background-color: var(--mantine-color-white);
+  border: 1px solid var(--mantine-color-dark-outline);
+}
+.--button-dashed {
+  background-color: var(--mantine-color-white);
+  border: 1px dashed var(--mantine-color-dark-outline);
+}
+.--button-primary {
+  background-color: var(--mantine-color-primary-light);
+}
+.--button-secondary {
+  background-color: var(--mantine-color-secondary-light);
+}
+.--button-status {
+  background-color: var(--mantine-color-status-error-light);
+}
+.--button-xs {
+  padding: 4px 8px;
+}
+.--button-sm {
+  padding: 8px 16px;
+}
+.--button-md {
+  padding: 16px 24px;
+}
+.--button-lg {
+  padding: 24px 32px;
+}
+.--button-xl {
+  padding: 32px 40px;
+}
