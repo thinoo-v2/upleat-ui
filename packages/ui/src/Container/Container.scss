@@ -1,0 +1,20 @@
+@charset 'utf-8';
+.container {
+  width: 100%;
+  &.demo {
+    margin: 0 auto;
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.02) 25%,
+      rgba(87, 159, 227, 0.2) 25%,
+      rgba(87, 159, 227, 0.2) 50%,
+      rgba(255, 255, 255, 0.02) 50%,
+      rgba(255, 255, 255, 0.02) 75%,
+      rgba(87, 159, 227, 0.2) 75%,
+      rgba(87, 159, 227, 0.2)
+    );
+    background-size: 5px 5px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
