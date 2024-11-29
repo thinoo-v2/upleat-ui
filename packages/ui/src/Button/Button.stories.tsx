@@ -26,3 +26,10 @@ export const Secondary: Story = {
     variant: 'secondary',
   },
 };
+
+export const Icotype: Story = {
+  args: {
+    children: '더보기',
+    variant: 'icotype',
+  },
+};
