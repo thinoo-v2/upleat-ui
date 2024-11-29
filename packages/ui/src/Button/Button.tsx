@@ -1,5 +1,7 @@
 'use client';
 
+import styles from "./Button.module.css";
+
 export interface ButtonProps {
   /**
    * Button contents
@@ -12,12 +14,12 @@ export interface ButtonProps {
   /**
    * Button variant
    */
-  variant?: 'primary' | 'secondary';
+  variant?: 'primary' | 'secondary' | 'icotype';
 }
 
 export const Button = ({ children, onClick, variant = 'primary' }: ButtonProps) => {
   return (
-    <button type="button" onClick={onClick} className={`button ${variant}`}>
+    <button type="button" onClick={onClick} className={styles[variant]}>
       {children}
     </button>
   );
