@@ -8,19 +8,17 @@ const config: StorybookConfig = {
   ],
 
   addons: [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials",
-    "@storybook/addon-interactions"
+    getAbsolutePath("@storybook/addon-links"),
+    getAbsolutePath("@storybook/addon-essentials"),
+    getAbsolutePath("@storybook/addon-interactions")
   ],
 
   framework: {
-    name: "@storybook/react-vite",
+    name: getAbsolutePath("@storybook/react-vite"),
     options: {}
   },
 
-  docs: {
-    autodocs: "tag"
-  },
+  docs: {},
 
   staticDirs: ['./public']
 };
