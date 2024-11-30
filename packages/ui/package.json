@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
+    "./vstack": "./src/VStack/index.ts",
     "./button": "./src/Button/index.ts",
     "./card": "./src/card.tsx",
     "./code": "./src/code.tsx"

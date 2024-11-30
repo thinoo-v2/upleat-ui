@@ -1,0 +1,22 @@
+.hstack {
+  display: flex; align-items: center; flex-direction: row; flex-wrap: wrap; padding: 8px;
+}
+.--hstack-bordered {
+  border: 1px solid var(--mantine-color-dark-outline)
+}
+.--hstack-xs {
+  gap: 4px;
+}
+.--hstack-sm {
+  gap: 8px;
+}
+.--hstack-md {
+  gap: 16px;
+}
+.--hstack-lg {
+  gap: 24px;
+}
+.--hstack-xl {
+  gap: 32px;
+}
+

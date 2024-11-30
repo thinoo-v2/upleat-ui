@@ -1,6 +1,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --mantine-color-primary-light: #007bff;
+  --mantine-color-secondary-light: #6c757d;
+  --mantine-color-status-error-light: #dc3545;
 }
 
 @media (prefers-color-scheme: dark) {
