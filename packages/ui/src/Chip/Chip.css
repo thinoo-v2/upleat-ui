@@ -1,0 +1,79 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  border:2px solid #ccc;
+  border-radius: 9999px;
+  color:#000;
+  font-weight: 500;
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+  cursor:pointer;
+}
+
+/* Sizes */
+.chip-sm {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.chip-md {
+  padding: 0.375rem 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+/* Variants & Colors */
+.chip--primary {
+  background-color: var(--color-primary-600);
+}
+
+.chip--secondary {
+  background-color: var(--color-secondary-600);
+}
+
+.chip--success {
+  background-color: var(--color-success-600);
+}
+
+.chip--warning {
+  background-color: var(--color-warning-600);
+}
+
+.chip--error {
+  background-color: var(--color-error-600);
+}
+
+/* Interactive states */
+.chip--clickable {
+  cursor: pointer;
+}
+
+.chip--clickable:hover {
+  filter: brightness(0.95);
+}
+
+.chip--clickable:active {
+  filter: brightness(0.9);
+}
+
+.chip--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.chip__label {
+  display: inline-block;
+}
+
+/* Active states for solid variant */
+.chip-active {
+  border-color:burlywood;
+}
+
+.chip-group {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+ 
