@@ -35,12 +35,13 @@
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-unused-imports": "^3.0.0",
+    "husky": "^9.1.7",
     "prettier": "^3.3.3",
     "sass-embedded": "^1.81.0",
     "storybook": "^8.0.0",
     "turbo": "^2.3.0",
     "typescript": "5.5.4",
-    "upleat-ui": "link:..\\path\\to\\upleat-ui",
+    "upleat-ui": "file:../path/to/upleat-ui",
     "vite": "^5.0.0"
   },
   "packageManager": "pnpm@8.15.6",
@@ -48,6 +49,7 @@
     "node": ">=18"
   },
   "dependencies": {
-    "@changesets/cli": "^2.27.9"
+    "@changesets/cli": "^2.27.9",
+    "classnames": "^2.5.1"
   }
 }
