@@ -41,7 +41,6 @@
     "storybook": "^8.0.0",
     "turbo": "^2.3.0",
     "typescript": "5.5.4",
-    "upleat-ui": "link:..\\path\\to\\upleat-ui",
     "vite": "^5.0.0"
   },
   "packageManager": "pnpm@8.15.6",
