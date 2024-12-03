@@ -33,11 +33,7 @@ export const Box: React.FC<BoxProps> = ({
   };
 
   return (
-    <div 
-      className={`${styles.box} ${className || ''}`}
-      style={style}
-      {...props}
-    >
+    <div className={`${styles.box} ${className || ''}`} style={style} {...props}>
       {children}
     </div>
   );
