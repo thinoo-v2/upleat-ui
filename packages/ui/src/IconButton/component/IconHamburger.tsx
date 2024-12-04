@@ -1,8 +1,8 @@
-interface IconHambergerProps extends React.ComponentPropsWithoutRef<'svg'> {
+interface IconHamburgerProps extends React.ComponentPropsWithoutRef<'svg'> {
   size?: number | string;
 }
 
-export const IconHamberger = ({ size = 16, style, ...others }: IconHambergerProps) => (
+export const IconHamburger = ({ size = 16, style, ...others }: IconHamburgerProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"

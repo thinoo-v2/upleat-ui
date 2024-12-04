@@ -3,11 +3,11 @@
 // import '../assets/css/common.css';
 import './IconButton.css';
 
-import { IconHamberger, IconChevronDown, IconFilter, IconKakao, IconScrollTop, IconSelectDown } from './component';
+import { IconHamburger, IconChevronDown, IconFilter, IconKakao, IconScrollTop, IconSelectDown } from './component';
 
 interface IconButtonProps {
   // css 내 background 로 표현시 사용
-  iconName?: 'chevronDown' | 'filter' | 'selectArrow' | 'kakao' | 'scrollTop' | 'hamberger';
+  iconName?: 'chevronDown' | 'filter' | 'selectArrow' | 'kakao' | 'scrollTop' | 'hamburger';
   // size?: number;
   // 텍스트 옆 이미지
   dataicon?: string;
@@ -52,7 +52,7 @@ export const IconButton = ({
         {iconName === 'selectArrow' && <IconSelectDown size={iconTypeSize} />}
         {iconName === 'kakao' && <IconKakao size={iconTypeSize} />}
         {iconName === 'scrollTop' && <IconScrollTop size={iconTypeSize} />}
-        {iconName === 'hamberger' && <IconHamberger size={iconTypeSize} />}
+        {iconName === 'hamburger' && <IconHamburger size={iconTypeSize} />}
       </>
     )}
   </div>
