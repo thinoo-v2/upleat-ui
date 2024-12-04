@@ -1,6 +1,7 @@
 'use client';
 
-import "./Button.css";
+import '../assets/css/common.css';
+import './Button.css';
 
 export interface ButtonProps {
   /**
@@ -11,41 +12,46 @@ export interface ButtonProps {
    * Optional click handler
    */
   onClick?: () => void;
+
   /**
    * Button variant
    */
-  variant?: 'solid' | 'outline' | 'dashed';
+  variant?: 'filled' | 'oulined' | 'dashed' | 'ghost' | 'link';
   /**
    * Button color
    */
-  color?: 'primary' | 'secondary' | 'status';
+  color?: 'default' | 'primary' | 'secondary' | 'gray' | 'success' | 'info' | 'warning' | 'danger' | 'light' | 'dark';
   /**
    * Button size
    */
   sizes?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+  /**
+   * Button rounded
+   */
+  rounded?: 'sqare' | 'rounded' | 'solid';
 }
 
-export const Button = ({ children, onClick, variant = 'solid', color = 'primary', sizes = 'md' }: ButtonProps) => {
-  const variantStyles = {
-    solid: '--button-solid',
-    outline: '--button-outline',
-    dashed: '--button-dashed'
-  };
-  const colorStyles = {
-    primary: '--button-primary',
-    secondary: '--button-secondary',
-    status: '--button-status'
-  };
-  const sizeStyles = {
-    xs: '--button-xs',
-    sm: '--button-sm',
-    md: '--button-md',
-    lg: '--button-lg',
-    xl: '--button-xl'
-  };
+/**
+ * 아이콘 컴포넌트
+ * 식별자 ID: Button
+ * 담당자: 김수호
+ * 뎁스: IconButton
+ */
 
+export const Button = ({
+  children,
+  onClick,
+  variant = 'filled',
+  color = 'primary',
+  sizes = 'md',
+  rounded = 'sqare',
+}: ButtonProps) => {
   return (
-    <button type="button" onClick={onClick} className={`button ${variantStyles[variant]} ${colorStyles[color]} ${sizeStyles[sizes]}`}>
+    <button
+      type="button"
+      onClick={onClick}
+      className={`upleat-button upleat-button-${variant} upleat-button-${sizes} upleat-button-${rounded} upleat-button-${color}`}
+    >
       {children}
     </button>
   );

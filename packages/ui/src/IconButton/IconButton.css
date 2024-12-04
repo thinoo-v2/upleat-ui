@@ -1,0 +1,68 @@
+.upleat-iconbutton {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* iconAlign false 일경우(아이콘이 오른쪽에 위치) */
+.upleat-iconbutton.false {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-direction: row-reverse;
+}
+
+/* icon+text 일경우 font size */
+[data-font-size='xs'] {
+  font-size: 11px;
+}
+[data-font-size='sm'] {
+  font-size: 14px;
+}
+[data-font-size='md'] {
+  font-size: 16px;
+}
+[data-font-size='lg'] {
+  font-size: 18px;
+}
+[data-font-size='xl'] {
+  font-size: 24px;
+}
+
+/* icon+text 일경우 icon size */
+.upleat-data-icon {
+  width: 20px;
+  height: 20px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+[data-icon-size='xs'].upleat-data-icon {
+  width: 14px;
+  height: 14px;
+}
+[data-icon-size='sm'].upleat-data-icon {
+  width: 16px;
+  height: 16px;
+}
+[data-icon-size='md'].upleat-data-icon {
+  width: 20px;
+  height: 20px;
+}
+[data-icon-size='lg'].upleat-data-icon {
+  width: 24px;
+  height: 24px;
+}
+[data-icon-size='xl'].upleat-data-icon {
+  width: 28px;
+  height: 28px;
+}
+
+/* icon+text 일경우 icon class */
+.upleat-data-icon.data-icon-7C {
+  background-image: url(./images/7C.png);
+}
+.upleat-data-icon.data-icon-OZ {
+  background-image: url(./images/OZ.png);
+}
