@@ -1,6 +1,8 @@
 @charset 'utf-8';
 .container {
   width: 100%;
+  box-sizing: border-box;
+
   &.is-demo {
     margin: 0 auto;
     background: linear-gradient(
@@ -14,7 +16,31 @@
       rgba(87, 159, 227, 0.2)
     );
     background-size: 5px 5px;
-    box-sizing: border-box;
     text-align: center;
+  }
+
+  &:not(.container-fluid) {
+    max-width: var(--container-max-width, 100%);
+
+    // size prop이 있을 때만 브레이크포인트별 스타일 적용
+    @media (min-width: 640px) {
+      max-width: var(--container-sm, var(--container-max-width));
+    }
+
+    @media (min-width: 768px) {
+      max-width: var(--container-md, var(--container-max-width));
+    }
+
+    @media (min-width: 1024px) {
+      max-width: var(--container-lg, var(--container-max-width));
+    }
+
+    @media (min-width: 1280px) {
+      max-width: var(--container-xl, var(--container-max-width));
+    }
+
+    @media (min-width: 1536px) {
+      max-width: var(--container-xxl, var(--container-max-width));
+    }
   }
 }
