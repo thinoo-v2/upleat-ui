@@ -1,0 +1,138 @@
+:root {
+  --chip-sm-padding: 4px 8px;
+  --chip-md-padding: 8px 16px;
+  --chip-lg-padding: 12px 24px;
+  --chip-sm-font: 10px;
+  --chip-md-font: 14px;
+  --chip-lg-font: 18px;
+}
+
+.chip {
+  border: none !important;
+
+  .icon {
+    margin-right: 4px;
+    line-height: 0;
+  }
+
+  &[role='radio']:not(.chip--disabled),
+  &[role='chekbox']:not(.chip--disabled) {
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(0.95);
+    }
+    &:active {
+      filter: brightness(0.95);
+    }
+  }
+
+  &--sm {
+    padding: var(--chip-sm-padding);
+    font-size: var(--chip-sm-font);
+  }
+  &--sm.chip--checked::before {
+    width: 10px;
+    height: 10px;
+  }
+  &--md {
+    padding: var(--chip-md-padding);
+    font-size: var(--chip-md-font);
+  }
+  &--md.chip--checked::before {
+    width: 14px;
+    height: 14px;
+  }
+  &--lg {
+    padding: var(--chip-lg-padding);
+    font-size: var(--chip-lg-font);
+  }
+  &--lg.chip--checked::before {
+    width: 18px;
+    height: 18px;
+  }
+
+  &--gray {
+    background-color: #fafafa;
+  }
+  &--red {
+    background-color: #fff1f0;
+  }
+  &--blue {
+    background-color: #e6f4ff;
+  }
+
+  &--checked {
+    filter: brightness(0.95);
+    .label {
+      font-weight: bold;
+    }
+  }
+  &--checked::before {
+    content: '';
+    margin-right: 4px;
+    background-image: url(https://s2.svgbox.net/octicons.svg?ic=check);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: contain;
+  }
+}
+
+.chip-group {
+  flex-flow: column;
+
+  &--default {
+    --chip-sm-max: 20%;
+    --chip-md-max: 40%;
+    --chip-lg-max: 80%;
+    @media screen and (min-width: 768px) {
+      --chip-sm-max: 40px;
+      --chip-md-max: 80px;
+      --chip-lg-max: 120px;
+    }
+    .chip--sm {
+      max-width: var(--chip-sm-max);
+    }
+    .chip--md {
+      max-width: var(--chip-md-max);
+    }
+    .chip--lg {
+      max-width: var(--chip-lg-max);
+    }
+  }
+
+  &--responsive {
+    --chip-sm-max: 100%;
+    --chip-md-max: 100%;
+    --chip-lg-max: 100%;
+    @media screen and (min-width: 1024px) {
+      --chip-sm-max: 20%;
+      --chip-md-max: 40%;
+      --chip-lg-max: 80%;
+    }
+    .chip--sm {
+      max-width: var(--chip-sm-max);
+    }
+    .chip--md {
+      max-width: var(--chip-md-max);
+    }
+    .chip--lg {
+      max-width: var(--chip-lg-max);
+    }
+  }
+
+  &--fluid {
+    --chip-sm-max: 100%;
+    --chip-md-max: 100%;
+    --chip-lg-max: 100%;
+    .chip--sm {
+      max-width: var(--chip-sm-max);
+    }
+    .chip--md {
+      max-width: var(--chip-md-max);
+    }
+    .chip--lg {
+      max-width: var(--chip-lg-max);
+    }
+  }
+}
