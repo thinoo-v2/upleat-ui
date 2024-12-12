@@ -86,9 +86,9 @@
     --chip-md-max: 40%;
     --chip-lg-max: 80%;
     @media screen and (min-width: 768px) {
-      --chip-sm-max: 40px;
-      --chip-md-max: 80px;
-      --chip-lg-max: 120px;
+      --chip-sm-max: 60px;
+      --chip-md-max: 120px;
+      --chip-lg-max: 180px;
     }
     .chip--sm {
       max-width: var(--chip-sm-max);

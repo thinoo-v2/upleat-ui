@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { ChipInput } from './ChipInput';
+import { ChipInputs } from './ChipInputs';
 import { ChipInputGroup } from './ChipInput.Group';
 
 const meta: Meta<typeof ChipInput> = {
@@ -48,19 +49,28 @@ export const Icon: Story = {
   },
 };
 
-// Default Container
+// Default Container : compound component
 export const DefaultContainer: Story = {
   render: () => (
-    <ChipInputGroup
-      container="default"
-      options={[
-        { id: 'check01', label: 'Chip01', size: 'sm', icon: true },
-        { id: 'check02', label: 'Chip02', size: 'md', icon: false },
-        { id: 'check03', label: 'Chip03', size: 'lg', icon: false },
-      ]}
-    />
+    <ChipInputs container="default">
+      <ChipInput id="check01" label="Chip01" size="sm" icon={true} />
+      <ChipInput id="check02" label="Chip02" size="md" icon={false} />
+      <ChipInput id="check03" label="Chip03" size="lg" icon={false} />
+    </ChipInputs>
   ),
 };
+// export const DefaultContainer: Story = {
+//   render: () => (
+//     <ChipInputGroup
+//       container="default"
+//       options={[
+//         { id: 'check01', label: 'Chip01', size: 'sm', icon: true },
+//         { id: 'check02', label: 'Chip02', size: 'md', icon: false },
+//         { id: 'check03', label: 'Chip03', size: 'lg', icon: false },
+//       ]}
+//     />
+//   ),
+// };
 
 // Responsive Container
 export const ResponsiveContainer: Story = {
