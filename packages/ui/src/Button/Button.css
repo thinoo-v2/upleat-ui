@@ -1,38 +1,125 @@
-.button {
-  display: inline-flex; align-items: center; vertical-align: middle;
+.upleat-button {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  color: #222;
+  font-weight: 500;
+  border-radius: 6px;
+  box-sizing: border-box;
 }
-.--button-solid {
-  background-color: var(--mantine-color-primary-light);
+
+/* variant */
+.upleat-button-filled {
+  border: 1px solid transparent;
+  background-color: var(--upleat-primary);
+  color: #fff;
 }
-.--button-outline {
-  background-color: var(--mantine-color-white);
-  border: 1px solid var(--mantine-color-dark-outline);
+.upleat-button-oulined {
+  background-color: #fff;
+  color: #222;
+  border: 1px solid var(--upleat-gray);
 }
-.--button-dashed {
-  background-color: var(--mantine-color-white);
-  border: 1px dashed var(--mantine-color-dark-outline);
+.upleat-button-dashed {
+  background-color: #fff;
+  border: 1px dashed var(--upleat-gray);
+  color: #222;
 }
-.--button-primary {
-  background-color: var(--mantine-color-primary-light);
+.upleat-button-ghost {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #222;
 }
-.--button-secondary {
-  background-color: var(--mantine-color-secondary-light);
+.upleat-button-ghost:hover {
+  border: 1px solid transparent;
+  background: var(--upleat-secondary);
+  color: #fff;
 }
-.--button-status {
-  background-color: var(--mantine-color-status-error-light);
+.upleat-button-link {
+  border: 1px solid transparent;
+  background: transparent;
+  color: #222;
 }
-.--button-xs {
-  padding: 4px 8px;
+.upleat-button-link:hover {
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--upleat-primary);
 }
-.--button-sm {
-  padding: 8px 16px;
+
+/* color */
+[class*='filled'].upleat-button-default {
+  background: transparent;
+  color: #222;
 }
-.--button-md {
-  padding: 16px 24px;
+[class*='filled'].upleat-button-primary {
+  background-color: var(--upleat-primary);
 }
-.--button-lg {
-  padding: 24px 32px;
+[class*='filled'].upleat-button-secondary {
+  background-color: var(--upleat-secondary);
 }
-.--button-xl {
-  padding: 32px 40px;
+[class*='filled'].upleat-button-gray {
+  background-color: var(--upleat-gray);
+}
+[class*='filled'].upleat-button-success {
+  background-color: var(--upleat-success);
+}
+[class*='filled'].upleat-button-info {
+  background-color: var(--upleat-info);
+}
+[class*='filled'].upleat-button-warning {
+  background-color: var(--upleat-warning);
+}
+[class*='filled'].upleat-button-danger {
+  background-color: var(--upleat-danger);
+}
+[class*='filled'].upleat-button-light {
+  background-color: var(--upleat-light);
+  color: var(--upleat-primary);
+}
+[class*='filled'].upleat-button-dark {
+  background-color: var(--upleat-dark);
+}
+
+/* sizes */
+.upleat-button-xs {
+  height: 24px;
+  padding: 0 8px;
+}
+.upleat-button-sm {
+  height: 32px;
+  padding: 0 16px;
+}
+.upleat-button-md {
+  height: 40px;
+  padding: 0 24px;
+}
+.upleat-button-lg {
+  height: 48px;
+  padding: 0 32px;
+}
+.upleat-button-xl {
+  height: 56px;
+  padding: 0 40px;
+}
+
+/* rounded */
+.upleat-button-square {
+  border-radius: 6px;
+}
+.upleat-button-solid {
+  border-radius: 0;
+}
+[class*='xs'].upleat-button-rounded {
+  border-radius: 12px;
+}
+[class*='sm'].upleat-button-rounded {
+  border-radius: 16px;
+}
+[class*='md'].upleat-button-rounded {
+  border-radius: 20px;
+}
+[class*='lg'].upleat-button-rounded {
+  border-radius: 24px;
+}
+[class*='xl'].upleat-button-rounded {
+  border-radius: 28px;
 }

@@ -1,8 +1,9 @@
-import React from 'react';
+'use client';
+
 import styles from './Box.module.css';
 
 export interface BoxProps {
-  children?: React.ReactNode;
+  text?: string | number;
   padding?: string | number;
   margin?: string | number;
   width?: string | number;
@@ -13,7 +14,7 @@ export interface BoxProps {
 }
 
 export const Box: React.FC<BoxProps> = ({
-  children,
+  text,
   padding,
   margin,
   width,
@@ -33,12 +34,8 @@ export const Box: React.FC<BoxProps> = ({
   };
 
   return (
-    <div 
-      className={`${styles.box} ${className || ''}`}
-      style={style}
-      {...props}
-    >
-      {children}
+    <div className={`${styles.box} ${className || ''}`} style={style} {...props}>
+      {text}
     </div>
   );
 };
