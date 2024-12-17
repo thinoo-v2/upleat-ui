@@ -5,9 +5,9 @@ import './chip03.css';
 export interface Chip03Props {
   children: ReactNode;
   className?: string;
-  role: 'radio' | 'checkbox' | null;
+  role?: 'radio' | 'checkbox' | 'null';
   checked?: boolean;
-  variant?: 'default' | 'icons'; // | 'icons'
+  variant?: 'default' | 'icons';
   fontSize?: '_sm' | '_md' | '_lg';
   fontColor?: '_colorRed' | '_colorBlue' | '_colorGray';
 }
@@ -28,9 +28,10 @@ export const Chip03 = ({
   const roleState = {
     radio: 'radio',
     checkbox: 'checkbox',
+    null: null,
   };
   const [checked, setChecked] = useState(false);
-  if (role === null) {
+  if (role === 'null') {
     return (
       <span className={`${baseStyles} ${fontSize} ${fontColor} ${variantStyles[variant]} ${className}`}>
         {children}

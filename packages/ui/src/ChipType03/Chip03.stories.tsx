@@ -17,6 +17,8 @@ export const Default: Story = {
   args: {
     variant: 'default',
     role: 'radio',
+    fontSize: '_md',
+    fontColor: '_colorGray',
     children: 'default Chip',
   },
 };
@@ -25,13 +27,18 @@ export const Icons: Story = {
   args: {
     variant: 'icons',
     role: 'checkbox',
+    fontSize: '_md',
+    fontColor: '_colorGray',
     children: 'icons Chip',
   },
 };
 
 export const NotSelectable: Story = {
   args: {
-    role: null,
+    variant: 'default',
+    role: 'null',
+    fontSize: '_md',
+    fontColor: '_colorGray',
     children: 'not selected Chip',
   },
 };
