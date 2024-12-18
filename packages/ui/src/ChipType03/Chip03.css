@@ -1,0 +1,58 @@
+:root {
+  font-size: 10px;
+  --sm: 1rem;
+  --md: 1.4rem;
+  --lg: 1.8rem;
+  --colorRed: red;
+  --colorGray: #777;
+  --colorBlue: blue;
+}
+.chip03 {
+  border: 1px solid #ddd;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  padding: 0.8rem;
+  /* cursor: pointer; */
+}
+.chip03[role='radio'],
+.chip03[role='checkbox'] {
+  cursor: pointer;
+}
+.chip03[aria-checked='true'] {
+  background-color: #e7ffa0fa;
+}
+
+.chip03.icon {
+  padding-left: 3rem;
+  position: relative;
+}
+.chip03.icon::before {
+  content: 'i';
+  position: absolute;
+  left: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 1.5rem;
+}
+._sm {
+  font-size: var(--sm);
+}
+._md {
+  font-size: var(--md);
+}
+._lg {
+  font-size: var(--lg);
+}
+._colorRed {
+  color: var(--colorRed);
+}
+._colorBlue {
+  color: var(--colorBlue);
+}
+._colorGray {
+  color: var(--colorGray);
+}
